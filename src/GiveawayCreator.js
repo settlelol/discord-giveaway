@@ -21,7 +21,7 @@ class GiveawayCreator {
 
         this.mongoUrl = url;
 
-        mongoose.connect(this.mongoUrl, {
+        mongoose.createConnection(this.mongoUrl, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
